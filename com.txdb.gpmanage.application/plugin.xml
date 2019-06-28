@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="com.txdb.ui.wizard" name="wizard" schema="schema/com.txdb.ui.wizard.exsd"/>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.txdb.gpmanage.application.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="com.txdb.gpmanage.application.Perspective"
+            id="com.txdb.gpmanage.application.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="gpmanage"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.txdb.gpmanage.application.application"
+            name="%title">
+         <property
+               name="windowImages"
+               value="/icons/gpmanage3_16.gif,/icons/gpmanage3_32.gif,/icons/gpmanage3_48.gif,/icons/gpmanage3_64.gif,/icons/gpmanage3_128.gif,/icons/gpmanage3_256.gif">
+         </property>
+         <property
+               name="appName"
+               value="%title">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="000000">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,252,445,20">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="5,275,445,15">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            class="com.txdb.gpmanage.application.view.MainView"
+            id="com.txdb.gpmanage.application.view.mainView"
+            name="mian"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>
