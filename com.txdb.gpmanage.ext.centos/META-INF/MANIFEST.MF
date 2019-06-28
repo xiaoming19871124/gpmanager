@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Centos
+Bundle-SymbolicName: com.txdb.gpmanage.ext.centos;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.txdb.gpmanage.ext.centos.Activator
+Bundle-Vendor: TXDB
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.txdb.gpmanage.core
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: com.jcraft.jsch;version="0.1.51"

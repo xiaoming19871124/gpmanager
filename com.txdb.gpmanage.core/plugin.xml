@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="com.txdb.gpmanage.service" name="Service" schema="schema/com.txdb.gpmanage.service.exsd"/>
+   <extension-point id="com.txdb.gpmanage.dao" name="Dao" schema="schema/com.txdb.gpmanage.dao.exsd"/>
+   <extension-point id="com.txdb.gpmanage.gp.service" name="com.txdb.gpmanage.gp.service" schema="schema/com.txdb.gpmanage.gp.service.exsd"/>
+   <extension-point id="com.txdb.gpmanage.monitorserver" name="com.txdb.gpmanage.monitorserver" schema="schema/com.txdb.gpmanage.monitorserver.exsd"/>
+
+</plugin>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.txdb.gpmanage.gp.service">
+      <os
+            osName="Redhat"
+            osVersion="3.x,4.x,5.x,6.x">
+         <gpEnvService
+               class="com.txdb.gpmanage.ext.redhat.v6.service.GpEnvService">
+         </gpEnvService>
+         <gpInstallService
+               class="com.txdb.gpmanage.ext.redhat.v6.service.GpInstallService">
+         </gpInstallService>
+         <gpExpandService
+               class="com.txdb.gpmanage.ext.redhat.v6.service.GpExpandService">
+         </gpExpandService>
+         <gpManageService
+               class="com.txdb.gpmanage.ext.redhat.v6.service.GpManageService">
+         </gpManageService>
+      </os>
+      <os
+            osName="Redhat"
+            osVersion="7.x,8.x">
+         <gpEnvService
+               class="com.txdb.gpmanage.ext.redhat.v7.service.GpEnvService">
+         </gpEnvService>
+         <gpInstallService
+               class="com.txdb.gpmanage.ext.redhat.v7.service.GpInstallService">
+         </gpInstallService>
+         <gpExpandService
+               class="com.txdb.gpmanage.ext.redhat.v7.service.GpExpandService">
+         </gpExpandService>
+         <gpManageService
+               class="com.txdb.gpmanage.ext.redhat.v7.service.GpManageService">
+         </gpManageService>
+      </os>
+   </extension>
+
+</plugin>

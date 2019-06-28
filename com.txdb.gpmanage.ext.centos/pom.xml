@@ -1,0 +1,14 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>gpmanage</artifactId>
+        <groupId>com.txdb.gpmanage</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../../</relativePath>
+    </parent>
+
+    <groupId>com.txdb.gpmanage</groupId>
+    <artifactId>com.txdb.gpmanage.ext.centos</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>eclipse-plugin</packaging>
+</project>
