@@ -1,0 +1,156 @@
+!SESSION 2019-05-29 14:04:14.643 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -eclipse.keyring C:\Users\ws\AppData\Local\Temp\tycho447919221930183977secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\ws\AppData\Local\Temp\tycho447919221930183977secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2019-05-29 14:04:14.643
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:04:14.643
+!MESSAGE Software being installed: gpmanage 1.0.0.201905290601
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:04:14.643
+!MESSAGE Missing requirement: toolingwin32.win32.x86_64org.eclipse.equinox.ds 1.0.0.201905290601 requires 'bundle org.eclipse.equinox.ds 1.6.0.v20190122-0806' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-29 14:04:14.643
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:04:14.643
+!MESSAGE From: gpmanage 1.0.0.201905290601
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:04:14.643
+!MESSAGE To: toolinggpmanage.configuration [1.0.0.201905290601]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-29 14:04:14.643
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:04:14.643
+!MESSAGE From: toolinggpmanage.configuration 1.0.0.201905290601
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:04:14.643
+!MESSAGE To: toolingwin32.win32.x86_64org.eclipse.equinox.ds [1.0.0.201905290601]
+!SESSION 2019-05-29 14:20:23.035 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -eclipse.keyring C:\Users\ws\AppData\Local\Temp\tycho2862592770882507721secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\ws\AppData\Local\Temp\tycho2862592770882507721secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2019-05-29 14:20:23.035
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:20:23.035
+!MESSAGE Software being installed: gpmanage 1.0.0.201905290617
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:20:23.035
+!MESSAGE Missing requirement: toolingwin32.win32.x86_64org.eclipse.equinox.ds 1.0.0.201905290617 requires 'bundle org.eclipse.equinox.ds 1.6.0.v20190122-0806' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-29 14:20:23.035
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:20:23.035
+!MESSAGE From: gpmanage 1.0.0.201905290617
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:20:23.035
+!MESSAGE To: toolinggpmanage.configuration [1.0.0.201905290617]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-29 14:20:23.035
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:20:23.035
+!MESSAGE From: toolinggpmanage.configuration 1.0.0.201905290617
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:20:23.035
+!MESSAGE To: toolingwin32.win32.x86_64org.eclipse.equinox.ds [1.0.0.201905290617]
+!SESSION 2019-05-29 14:30:05.288 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -eclipse.keyring C:\Users\ws\AppData\Local\Temp\tycho2905429147392551727secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\ws\AppData\Local\Temp\tycho2905429147392551727secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2019-05-29 14:30:05.288
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:30:05.288
+!MESSAGE Software being installed: gpmanage 1.0.0.201905290626
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:30:05.288
+!MESSAGE Missing requirement: toolingwin32.win32.x86_64org.eclipse.equinox.ds 1.0.0.201905290626 requires 'bundle org.eclipse.equinox.ds 1.6.0.v20190122-0806' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-29 14:30:05.288
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:30:05.288
+!MESSAGE From: gpmanage 1.0.0.201905290626
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:30:05.288
+!MESSAGE To: toolinggpmanage.configuration [1.0.0.201905290626]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-29 14:30:05.288
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:30:05.288
+!MESSAGE From: toolinggpmanage.configuration 1.0.0.201905290626
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:30:05.288
+!MESSAGE To: toolingwin32.win32.x86_64org.eclipse.equinox.ds [1.0.0.201905290626]
+!SESSION 2019-05-29 14:56:50.443 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -eclipse.keyring C:\Users\ws\AppData\Local\Temp\tycho3701419504333168044secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\ws\AppData\Local\Temp\tycho3701419504333168044secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2019-05-29 14:56:50.443
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:56:50.443
+!MESSAGE Software being installed: gpmanage 1.0.0.201905290653
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:56:50.443
+!MESSAGE Missing requirement: toolingwin32.win32.x86_64org.eclipse.equinox.ds 1.0.0.201905290653 requires 'bundle org.eclipse.equinox.ds 1.6.0.v20190122-0806' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-29 14:56:50.443
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:56:50.443
+!MESSAGE From: gpmanage 1.0.0.201905290653
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:56:50.443
+!MESSAGE To: toolinggpmanage.configuration [1.0.0.201905290653]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-29 14:56:50.443
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:56:50.443
+!MESSAGE From: toolinggpmanage.configuration 1.0.0.201905290653
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 14:56:50.443
+!MESSAGE To: toolingwin32.win32.x86_64org.eclipse.equinox.ds [1.0.0.201905290653]
+!SESSION 2019-05-29 15:06:23.716 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -eclipse.keyring C:\Users\ws\AppData\Local\Temp\tycho9155163097965619457secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\ws\AppData\Local\Temp\tycho9155163097965619457secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2019-05-29 15:06:23.717
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-29 15:06:23.717
+!MESSAGE Software being installed: gpmanage 1.0.0.201905290703
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-29 15:06:23.717
+!MESSAGE Missing requirement: toolingwin32.win32.x86_64org.eclipse.equinox.ds 1.0.0.201905290703 requires 'bundle org.eclipse.equinox.ds 1.6.0.v20190122-0806' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-29 15:06:23.717
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 15:06:23.717
+!MESSAGE From: gpmanage 1.0.0.201905290703
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 15:06:23.717
+!MESSAGE To: toolinggpmanage.configuration [1.0.0.201905290703]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-29 15:06:23.717
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 15:06:23.717
+!MESSAGE From: toolinggpmanage.configuration 1.0.0.201905290703
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 15:06:23.717
+!MESSAGE To: toolingwin32.win32.x86_64org.eclipse.equinox.ds [1.0.0.201905290703]
+!SESSION 2019-05-29 15:10:32.817 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -eclipse.keyring C:\Users\ws\AppData\Local\Temp\tycho1942719304426185291secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\ws\AppData\Local\Temp\tycho1942719304426185291secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 4 10053 2019-05-29 15:10:32.817
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-29 15:10:32.817
+!MESSAGE Software being installed: gpmanage 1.0.0.201905290708
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-29 15:10:32.817
+!MESSAGE Missing requirement: toolingwin32.win32.x86_64org.eclipse.equinox.ds 1.0.0.201905290708 requires 'bundle org.eclipse.equinox.ds 1.6.0.v20190122-0806' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-29 15:10:32.817
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 15:10:32.817
+!MESSAGE From: gpmanage 1.0.0.201905290708
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 15:10:32.817
+!MESSAGE To: toolinggpmanage.configuration [1.0.0.201905290708]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-29 15:10:32.817
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 15:10:32.817
+!MESSAGE From: toolinggpmanage.configuration 1.0.0.201905290708
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-29 15:10:32.817
+!MESSAGE To: toolingwin32.win32.x86_64org.eclipse.equinox.ds [1.0.0.201905290708]

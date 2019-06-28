@@ -1,0 +1,8 @@
+<extensions>
+  <extension>
+    <groupId>com.txdb.gpmanage</groupId>
+    <artifactId>gpmanage</artifactId>
+    <version>0.26.0</version>
+  </extension>
+</extensions>
+

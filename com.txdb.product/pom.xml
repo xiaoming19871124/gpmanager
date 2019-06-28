@@ -1,0 +1,67 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.txdb.gpmanage</groupId>
+    <artifactId>gpmanage</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../</relativePath>
+	</parent>
+
+	<groupId>com.txdb.gpmanage</groupId>
+	<artifactId>com.txdb.product</artifactId>
+	<packaging>eclipse-repository</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-repository-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<formats>
+						<win32>zip</win32>
+						<linux>tar.gz</linux>
+						<macosx>tar.gz</macosx>
+						<solaris>tar.gz</solaris>
+					</formats>
+					<products>
+						<product>
+							<id>com.txdb.product</id>
+							<archiveFileName>TX_MANAGE-${txrmanage-version}</archiveFileName>
+							<rootFolders>
+								<!-- for MacOSX, make sure you use a folder ending with .app , see 
+									bug 463670 -->
+								<macosx>TX_MANAGE.app</macosx>
+								<win32>TX_MANAGE</win32>
+								<linux>TX_MANAGE</linux>
+								<solaris>TX_MANAGE</solaris>
+							</rootFolders>
+						</product>
+					</products>
+					
+					
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-director-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<executions>
+					<execution>
+						<id>materialize-products</id>
+						<goals>
+							<goal>materialize-products</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>archive-products</id>
+						<goals>
+							<goal>archive-products</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

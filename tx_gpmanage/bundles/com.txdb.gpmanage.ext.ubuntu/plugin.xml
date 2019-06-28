@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.txdb.gpmanage.gp.service">
+      <os
+            osName="Ubuntu"
+            osVersion="*">
+         <gpEnvService
+               class="com.txdb.gpmanage.ext.ubuntu.service.GpEnvService">
+         </gpEnvService>
+         <gpInstallService
+               class="com.txdb.gpmanage.ext.ubuntu.service.GpInstallService">
+         </gpInstallService>
+         <gpExpandService
+               class="com.txdb.gpmanage.ext.ubuntu.service.GpExpandService">
+         </gpExpandService>
+         <gpManageService
+               class="com.txdb.gpmanage.ext.ubuntu.service.GpManageService">
+         </gpManageService>
+      </os>
+   </extension>
+
+</plugin>

@@ -1,0 +1,77 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.txdb.gpmanage</groupId>
+	<artifactId>gpmanage</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<tycho.version>0.24.0</tycho.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<luna-repo.url>http://download.eclipse.org/releases/luna</luna-repo.url>
+		<txrmanage-version>1.0.0</txrmanage-version>
+	</properties>
+
+	<modules>
+		<module>bundles/com.txdb.gpmanage.application</module>
+		<module>bundles/com.txdb.gpmanage.core</module>
+		<module>bundles/com.txdb.gpmanage.lib</module>
+		<module>bundles/com.txdb.gpmanage.ext.centos</module>
+		<module>bundles/com.txdb.gpmanage.ext.redhat</module>
+		<module>bundles/com.txdb.gpmanage.ext.ubuntu</module>
+		<module>bundles/com.txdb.gpmanage.monitor</module>
+		<module>bundles/com.txdb.gpmanage.install</module>
+		<module>bundles/com.txdb.gpmanage.manage</module>
+		<module>bundles/com.txdb.gpmanage.charts</module>
+		<module>bundles/com.txdb.gpmanage.audit</module>
+		<module>features/com.txdb.gpmanage.feature</module>
+		<module>product</module>
+	</modules>
+
+	<repositories>
+		<repository>
+			<id>luna</id>
+			<url>${luna-repo.url}</url>
+			<layout>p2</layout>
+		</repository>
+
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<environments>
+						<!-- <environment> <os>linux</os> <ws>gtk</ws> <arch>x86</arch> </environment> 
+							<environment> <os>linux</os> <ws>gtk</ws> <arch>x86_64</arch> </environment> 
+							<environment> <os>win32</os> <ws>win32</ws> <arch>x86</arch> </environment> -->
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<!-- <environment> <os>macosx</os> <ws>cocoa</ws> <arch>x86_64</arch> 
+							</environment> -->
+					</environments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+
