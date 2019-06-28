@@ -1,0 +1,16 @@
+<html>
+<body>
+尊敬的用户：<br/> 
+&nbsp&nbsp您好！ <br/>
+&nbsp&nbspmaster节点为：${master}的集群<br/>
+&nbsp&nbsp主机名： ${server}<br/>
+&nbsp&nbspmemory used ${value}%！<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 请及时处理！ 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+系统邮件自动发送，请勿回复！ 
+</body>
+</html>

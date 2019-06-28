@@ -1,0 +1,22 @@
+<html>
+<body>
+尊敬的用户：<br/> 
+&nbsp&nbsp您好！ <br/>
+&nbsp&nbspmaster节点为：${master}的集群存在长查询，信息如下：<br/>
+&nbsp&nbspqueryID： ${id}<br/>
+&nbsp&nbspquery statu:${statu}<br/>
+&nbsp&nbspquery sql:${sql}<br/>
+&nbsp&nbspquery application:${application}<br/>
+&nbsp&nbspquery submit data: ${submitTime}<br/>
+&nbsp&nbspquery time:${time}<br/>
+&nbsp&nbspquery user:${user}<br/>
+&nbsp&nbspquery database:${database}<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 请及时处理！ 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+系统邮件自动发送，请勿回复！ 
+</body>
+</html>
