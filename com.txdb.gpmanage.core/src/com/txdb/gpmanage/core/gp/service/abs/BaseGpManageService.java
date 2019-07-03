@@ -1183,13 +1183,21 @@ public abstract class BaseGpManageService implements IGpManageService {
 				// 3.0 gplogfilter -o xxx
 				resultSet.addChildResultSet(dao.executeInteractiveCommand(filterCommand + "\n", new String[] {}));
 				
-				// 4.0 convert *.output to *.output.convert cmd1:去掉所有换行; cmd2:按照年月日日期格式分隔每行; cmd3:去掉空行
+				// 4.0 convert *.output to *.output.convert 
+				// cmd1:去掉所有换行; 
+				// cmd2:按照年月日日期格式分隔每行; 
+				// cmd3:去掉空行
+				// cmd4:将所有“'|'”替换为“'l'”防止“|”分隔符冲突
 				String sed_cmd1 = "sed \":a;N;s/\\n//g;ta\" " + outputDir + "/" + logFile_output + " > " + outputDir + "/" + logFile_output_convert;
 				resultSet.addChildResultSet(dao.executeInteractiveCommand(sed_cmd1 + "\n", new String[] {}));
-				String sed_cmd2 = "sed -i 's/\\([0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\} [0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}\\.[0-9]\\{6\\} CST\\)/\\n\\1/g' " + outputDir + "/" + logFile_output_convert;
+//				String sed_cmd2 = "sed -i 's/\\([0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\} [0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}\\.[0-9]\\{6\\} CST\\)/\\n\\1/g' " + outputDir + "/" + logFile_output_convert;
+				String sed_cmd2 = "sed -i 's/\\([0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\} [0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}\\.[0-9]\\{6\\} CST|\\)/\\n\\1/g' " + outputDir + "/" + logFile_output_convert;
+//				String sed_cmd2 = String.format(IConstantsCmds.SED_STR_REPLACE, "\\([0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\} [0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}\\.[0-9]\\{6\\} CST\\)", "\\n\\1", outputDir + "/" + logFile_output_convert);
 				resultSet.addChildResultSet(dao.executeInteractiveCommand(sed_cmd2 + "\n", new String[] {}));
 				String sed_cmd3 = "sed -i '/^[[:space:]]*$/d' " + outputDir + "/" + logFile_output_convert;
 				resultSet.addChildResultSet(dao.executeInteractiveCommand(sed_cmd3 + "\n", new String[] {}));
+				String sed_cmd4 = String.format(IConstantsCmds.SED_STR_REPLACE.replaceAll("'", "\""), "'|'", "'l'", outputDir + "/" + logFile_output_convert);
+				resultSet.addChildResultSet(dao.executeInteractiveCommand(sed_cmd4 + "\n", new String[] {}));
 				
 				// 5.0 gpscp *.output.convert
 				String scp_cmd = String.format(IConstantsCmds.GP_SCP_H, dao.getHostname(), outputDir + "/" + logFile_output_convert, gatherDir);

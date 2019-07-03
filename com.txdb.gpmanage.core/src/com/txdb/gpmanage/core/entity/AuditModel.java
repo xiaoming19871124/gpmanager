@@ -301,9 +301,9 @@ public class AuditModel {
 			else if (type.contains("Date"))
 				columnStr += " timestamp with time zone";
 			else if (type.contains("Text"))
-				columnStr += " text";
+				columnStr += " text default ''";
 			else
-				columnStr += " varchar(100)";
+				columnStr += " varchar(100) default ''";
 
 			String splitter = (field == fields[fields.length - 1] ? ")" : ", ");
 			FieldTag fieldTag = field.getAnnotation(FieldTag.class);
